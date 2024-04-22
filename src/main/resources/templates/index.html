@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layouts :: head"></head>
+<body class="d-flex flex-column h-100">
+<div th:include="layouts :: navbar"></div>
+
+<div class="swiper-container" th:height="400">
+    <div class="p-5 text-center bg-image " style="background-image: url(/pictures/1.jpg); height: 400px;"></div>
+</div>
+
+<!-- ITT KEZDODIK A TARTALOM-->
+<div class="container flex-shrink-0">
+
+    <!-- Hero / Hős szekció -->
+    <section class="hero mb-5">
+        <h2>Debrecen szívében található étterem - 2014 óta nyitva!</h2>
+    </section>
+</div>
+
+<section id="scroll">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid rounded-circle" th:src="@{/pictures/2.jpg}" alt="..."></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">Köszöntjük az éttermünkben</h2>
+                    <p>amely már 2014 óta fogadja vendégeit Debrecen szívében. Hisszük, hogy az étel nem
+                        csupán táplálék, hanem egy életérzés, egy kulináris utazás, amely minden falatban megidézi az ízek és aromák
+                        gazdagságát.</p>
+                    <p>Ételeink készítésénél nagy hangsúlyt fektetünk a hagyományos magyar konyha alapvető ízeire és az alapanyagok minőségére. Friss, helyi termelőktől származó alapanyagokból készülő ételeink garantálják az autentikus ízek és az egészséges étkezés élményét.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="p-5"><img class="img-fluid rounded-circle" th:src="@{/pictures/4.jpg}" alt="..."></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-5">
+                    <h2 class="display-4">Az étterem</h2>
+                    <p> hangulatos belső térrel és barátságos kiszolgálással várja vendégeit. Kényelmes étkezőinkben, melyek tökéletesek családi ebédekhez vagy romantikus vacsorákhoz, örömmel kínáljuk a magyar konyha legjavát.</p>
+                    <p>Annak érdekében, hogy étteremünk ne csak a gasztronómiai élmények, hanem a kulturális és zenei élmények
+                        helyszíne is legyen, rendszeresen élőzenei esteket rendezünk. Nem csupán a finom falatokra és italokra
+                        szolgál ezek a pillanatok, hanem az igazi magyar zenei örökségre is, melynek részese lehetnek
+                        vendégeink.</p>
+                    <p>A hagyományos magyar zenei stílusok, a magyar kultúra és történelem részei, melyeket szívesen megidézünk az esti élőzenei programjaink során. Zenészeink profizmusukkal és szenvedélyükkel garantálják, hogy vendégeink teljes mértékben élvezhessék az estét.</p>
+                    <a href="esemenyek" class="btn btn-primary">További információk</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<footer th:replace="layouts :: footer"></footer>
+</body>
+</html>

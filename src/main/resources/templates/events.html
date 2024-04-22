@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layouts :: head"></head>
+<body class="d-flex flex-column h-100">
+<div th:include="layouts :: navbar"></div>
+
+<!-- ITT KEZDODIK A TARTALOM-->
+<div class="container flex-shrink-0">
+    <h1>Események</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Események a Arany Asztal Étteremben - Július</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Dátum</th>
+                            <th scope="col">Esemény</th>
+                            <th scope="col">Időpont</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>2024. július 3.</td>
+                            <td>Bor és Étel Kóstoló</td>
+                            <td>19:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>2024. július 10.</td>
+                            <td>Boros Est - Kiemelt magyar borok bemutatója</td>
+                            <td>18:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>2024. július 17.</td>
+                            <td>Népzenei Koncert</td>
+                            <td>20:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>2024. július 24.</td>
+                            <td>Hagyományos Magyar Konyha bemutató</td>
+                            <td>16:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>2024. július 29.</td>
+                            <td>Élőzenés Est</td>
+                            <td>19:30 - 22:30</td>
+                        </tr>
+                        <tr>
+                            <td>2024. július 30.</td>
+                            <td>Hagyományos Borozás és Zene</td>
+                            <td>20:00 - 23:00</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="text-muted">Kérjük, vegye figyelembe, hogy az események időpontja és részletei változhatnak. Javasoljuk, hogy foglaljon asztalt időben az események részvételéhez.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer th:replace="layouts :: footer"></footer>
+</body>
+</html>

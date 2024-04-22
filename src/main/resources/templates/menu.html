@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hu"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layouts :: head"> </head>
+<body class="d-flex flex-column h-100">
+<div th:include="layouts :: navbar"></div>
+
+<div class="container flex-shrink-0">
+    <h1>Étlap</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Ételek</h2>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Hortobágyi palacsinta</h5>
+                        <small>1200 Ft</small>
+                    </div>
+                    <p class="mb-1">Töltött húsos palacsinta</p>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Gulyásleves</h5>
+                        <small>900 Ft</small>
+                    </div>
+                    <p class="mb-1">Hagyományos magyar gulyás</p>
+                </a>
+                <!-- További ételek itt -->
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Töltött káposzta</h5>
+                        <small>1400 Ft</small>
+                    </div>
+                    <p class="mb-1">Húsos töltött káposzta savanyúsággal</p>
+                </a>
+                <!-- További ételek itt -->
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Halászlé</h5>
+                        <small>1600 Ft</small>
+                    </div>
+                    <p class="mb-1">Fűszeres pontyhalból készült hagyományos magyar leves</p>
+                </a>
+                <!-- További ételek itt -->
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Pörkölt</h5>
+                        <small>1800 Ft</small>
+                    </div>
+                    <p class="mb-1">Sertéshús pirospaprikával fűszerezve, hagyományosan készítve</p>
+                </a>
+                <!-- További ételek itt -->
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h2>Italok</h2>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Tokaji Aszú</h5>
+                        <small>2500 Ft/pohár</small>
+                    </div>
+                    <p class="mb-1">Édes, kiváló minőségű tokaji bor</p>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Unicum</h5>
+                        <small>1000 Ft/pohár</small>
+                    </div>
+                    <p class="mb-1">Hagyományos magyar gyógynövénylikőr</p>
+                </a>
+                <!-- További italok itt -->
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Pálinka</h5>
+                        <small>800 Ft/pohár</small>
+                    </div>
+                    <p class="mb-1">Kiváló minőségű magyar gyümölcs pálinkák</p>
+                </a>
+                <!-- További italok itt -->
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Sör</h5>
+                        <small>450 Ft/pohár</small>
+                    </div>
+                    <p class="mb-1">Hagyományos magyar kézműves sör</p>
+                </a>
+                <!-- További italok itt -->
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Fröccs</h5>
+                        <small>600 Ft/pohár</small>
+                    </div>
+                    <p class="mb-1">Fehér- vagy rozébor szódával</p>
+                </a>
+                <!-- További italok itt -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer th:replace="layouts :: footer"> </footer>
+<!-- Bootstrap JavaScript and dependencies -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hu"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layouts :: head"></head>
+<body class="d-flex flex-column h-100">
+<div th:include="layouts :: navbar"></div>
+
+
+<!-- ITT KEZDODIK A TARTALOM-->
+<div class="container flex-shrink-0">
+    <h1 class="mb-5">Kapcsolat</h1>
+    <div class="mapouter">
+        <div class="gmap_canvas">
+            <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Debrecen Kossuth tér 14&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            <a href="https://embed-googlemap.com">embed google maps in website</a></div>
+    </div>
+
+    <p>Az étterem címe: Debrecen, Piac utca 10.</p>
+    <p>Telefonszám: +36 30 123 4567</p>
+    <p>Email cím: info@etteremneve.hu</p>
+</div>
+
+<footer th:replace="layouts :: footer"></footer>
+</body>
+</html>

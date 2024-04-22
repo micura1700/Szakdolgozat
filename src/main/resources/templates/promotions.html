@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hu"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://thymeleaf.org">
+<head th:replace="layouts :: head"></head>
+<body class="d-flex flex-column h-100">
+<div th:include="layouts :: navbar"></div>
+
+<!-- ITT KEZDODIK A TARTALOM-->
+<div class="container flex-shrink-0">
+    <h1>Kedvezmények</h1>
+
+    <div class="row justify justify-content-center">
+        <div class="col-12 col-lg-9 col-xl-8">
+            <form name="registration" th:action="@{/subscribe}" th:object="${email}" method="post">
+                <div class="card">
+                    <div class="row justify-content-center">
+                        <div class="col-md-9 col-11">
+                            <div id="exist" th:if="${param.alreadyExists}" class="alert alert-danger text-center">Létező email cím.</div>
+                            <div id="success" th:if="${param.successSubscribe}" class="alert alert-success text-center">Sikeres felíratkozás</div>
+                            <div class="row mt-0">
+                                <div class="col-md-12 ">
+                                    <h4 class="text-center heading">SZEREZZ 15% KEDVEZMÉNYT</h4>
+                                    <p class="text-center sub-heading">Csatlakozzon hozzánk és azonnal élvezze a 15%
+                                        kedvezményt a következő étkezésénél! Emellett időben értesülhet eseményeinkről
+                                        és kedvezményeinkről is!</p>
+                                </div>
+                            </div>
+                            <div class="form-group row mb-3">
+                                <div class="col-md-12 mb-0">
+                                    <input id="emailName" type="email" th:field="*{emailName}" placeholder="E-mail" name="emailName"
+                                           class="form-control input-box rm-border text-center">
+                                </div>
+                            </div>
+                            <div class="form-group row justify-content-center mb-0">
+                                <div class="row justify-content-center">
+                                    <input type="submit" value="Feliratkozás" id="subscribe" class="btn btn-block btn-gold rm-border">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<footer th:replace="layouts :: footer"></footer>
+</body>
+</html>
